@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> MyProject</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/loginPage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Harish World</h1>
+        <h2><marquee><i><strong>Please Enter Your Login Credentials</strong></i></marquee></h2>
+        <nav>
+            <div class="logo">
+                <p><strong>Hari</strong></p>
+            </div>
+            <ul>
+                <li><a href="lib/about.html"><i><strong>About</strong></i></a></li>
+                <li><a href="lib/serviceportel.html"><i><strong>ServicePortel</strong></i></a></li>
+                <li><a href="lib/Contactus.html"><i><strong>ContactUs</strong></i></a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <div class="form-box">
+                <form action="/action_page.php" method="post" target="_self">
+
+                    <div class="form-value">
+                        <div class="inputbox">
+                            <label>LoginID</label>
+                            <input type="text" name="LoginID" id="LoginID" placeholder="Enter Userid" required />
+                        </div>
+                        <div class="inputbox">
+                            <label>password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter Password" required />
+                        </div>
+                        <div class="forget">
+                            <label><input type="checkbox" /><i>Remember me</i></label>
+                            <a href="Forgetpassword.html">Forget Password</a>
+                        </div>
+                        <div class="button">
+                            <button type="button" id="btn" onclick="validate() "><strong>click Here To Proceed</strong></button>
+
+                        </div>
+
+                        <div class="Register">
+                            <strong>click Here To</strong>
+                            <a href="Register.html"><strong> Register</strong></a>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+    <script src="js/JavaScript1.js"></script>
+</body>
+
+</html>

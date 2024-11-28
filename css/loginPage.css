@@ -1,0 +1,174 @@
+﻿*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+}
+h1 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:aquamarine ;
+    color: red;
+    text-align: center;
+    font-size:30px;
+}
+h2 {
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color:burlywood;
+     font-size:15px;
+     color:blueviolet;
+}
+
+.marquee h2 {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    margin:3px;
+    line-height: 30px;
+    text-align: center;
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -moz-animation: marquee 15s linear infinite;
+    -webkit-animation: marquee 15s linear infinite;
+    animation: marquee 15s linear infinite;
+}
+
+nav {
+    width: 100%;
+    height:70px;
+    line-height:25px;
+    padding:0px 100px;
+    position:fixed;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background-color:aquamarine;
+    color:blueviolet;
+    text-align: left;
+    font-size: 40px;
+}
+nav ul
+{
+    float:right;
+}
+nav li{
+    display:inline-block;
+}
+    nav li a{
+        font-size:15px;
+        text-transform:uppercase;
+        padding:0px 30px;
+        color:black;
+        text-decoration:none;
+    }
+    nav li a:hover{
+        color:aqua;
+        transition:all 0.4s ease 0s;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background: url('images/bgdimage1.jpg')no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+.form-box{
+    position:relative;
+    width:400px;
+    height:450px;
+    background:transparent;
+    border:2px solid rgba(255,255,255,0.5);
+    border-radius:20px;
+    backdrop-filter: blur(15px);
+    display:flex;
+    justify-content:center;
+    align-content:center;
+
+}
+.inputbox {
+    position:relative;
+    margin:30px;
+    width:310px;
+    border-bottom:2px solid #ffff;
+    color:black;
+    align-items:center;
+    align-content:center;
+    
+}
+    .inputbox label {
+        position: relative;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: #ffff;
+        font-size: 1em;
+        pointer-events: none;
+        transition: .5s;
+    }
+input:focus ~ label,
+input:valid ~ label{top:-5px;}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #ffff;
+}
+.forget{
+    margin:-15px 0 15px;
+    font-size:.9em;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+}
+.forget label input{
+    margin-right:3px;
+}
+forget label a{
+    color:#fff;
+    text-decoration:none;
+}
+forget label a:hover{
+    text-decoration:underline;
+
+}
+
+button {
+    width:100%;
+    height:40px;
+    border-radius:40px;
+    background:#ffff;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:1em;
+    font-weight:600;
+    color: black;
+    text-align: center;
+    font-display: initial
+}
+
+.Register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.Register p a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+}
+.Register p a:hover{
+    text-decoration:underline;
+}
